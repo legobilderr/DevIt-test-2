@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+
+    <div class="navbar">
+        <div class="container">
+            <a class="logo" href="#">Guidance<span>.</span></a>
+
+            <img id="mobile-cta" class="mobile-menu" src="images/menu.svg" alt="Open navigation">
+            <nav>
+                <img id="mobile-exit" class="mobile-menu-exit" src="images/exit.svg" alt="Close nav">
+                <ul class="primary-nav">
+                    <li><a href="#">Home</a></li>
+                    <div class="dropdown">
+                        <li><a href="#">Courses</a></li>
+                        <div class="dropdown-content">
+                            <a href="#">Projekt management</a>
+                            <a href="#">Android development</a>
+                            <a href="#">Online marketing</a>
+                            <a href="#">Front-end developer</a>
+                        </div>
+                    </div>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Video</a></li>
+                    <li><a href="#">Interesting</a></li>
+                </ul>
+
+                <ul class="secondary-nav">
+                    <li class="Authorization-btn"><a href="#">Authorization</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <section class="hero">
+        <div class="wrapper-content">
+            <div class="container">
+                <div class="registr">
+                    <form action="" class="form">
+                        <label for="Name"><b> ФИО</b></label>
+                        <input type="text" id="Name" name="Name" required>
+
+                        <label for="email"><b>E-mail</b></label>
+                        <input type="text" id="email" name="email" required>
+
+                        <label for="phone"><b>Телефон</b></label>
+                        <div class="phonespluss">
+                            <input type="phone" name="phone" required>
+                            <div align="center"><b>+</b></div>
+                        </div>
+                        <div class="phones_delete">
+                            <input type="phone" name="phone" required>
+                            <div align="center"><b>удалить</b></div>
+                        </div>
+                        <label for="age"><b>возраст</b></label>
+                        <input type="age" id="age" name="age" required>
+
+                        <label htmlFor='single-file'>
+                            <div className='upload'>
+                            </div>
+                        </label>
+                        <input type='file' id='single-file' />
+
+                        <label for="resume">резюме</label>
+                        <textarea id="resume" name="resume"></textarea>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bottomnav">
+        <div class="footer">
+            <div class="container">
+                <nav>
+                    <ul class="primary-nav">
+                        <li class="current"><a href="#">Home</a></li>
+                        <li><a href="#">Courses</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Video</a></li>
+                        <li><a href="#">Interesting</a></li>
+                    </ul>
+
+                </nav>
+            </div>
+    </section>
+    <hr class="hr">
+    <section class="features">
+        <div class="container">
+
+
+            <div>
+                <a href="#">Courses</a>
+
+                <ul class="features-nav">
+                    <li><a href="#">Projekt management</a></li>
+                    <li><a href="#">Android development</a></li>
+                    <li><a href="#">Online marketing</a></li>
+                    <li><a href="#">Front-end developer</a></li>
+                </ul>
+
+            </div>
+
+
+            <div>
+                <a href="#">Interesting</a>
+
+                <ul class="features-nav">
+                    <li class="current"><a href="#">Blog</a></li>
+                    <li><a href="#">Youtube</a></li>
+                    <li><a href="#">Team</a></li>
+                    <li><a href="#">Community</a></li>
+                </ul>
+
+            </div>
+
+
+            <div>
+                <a href="#">Social networks</a>
+
+                <ul class="Social">
+                    <li><a href="#"><img id="twiter" class="twiter" src="images/twitter.png" alt="twiter"></a></li>
+                    <li><a href="#"><img id="lincedin" class="lincedin" src="images/linck.png" alt="lincedin"></a>
+                    </li>
+                    <li><a href="#"><img id="facebook" class="facebook" src="images/fb.png" alt="facebook"></a>
+                    </li>
+                    <li><a href="#"><img id="instagram" class="instagram" src="images/inst.png" alt="instagram"></a>
+                    </li>
+                </ul>
+
+            </div>
+    </section>
+    <hr class="hr">
+    <section class="footer">
+        <div class="container">
+            <ul class="footer-nav">
+                <li><a href="#">Term of Service</a></li>
+                <li><a href="#">Privacy policy</a></li>
+            </ul>
+
+    </section>
+
+</body>
+<script>
+    const mobileBtn = document.getElementById('mobile-cta')
+    nav = document.querySelector('nav')
+    mobileBtnExit = document.getElementById('mobile-exit');
+
+    mobileBtn.addEventListener('click', () => {
+        nav.classList.add('menu-btn');
+    })
+
+    mobileBtnExit.addEventListener('click', () => {
+        nav.classList.remove('menu-btn');
+    })
+
+
+
+</script>
+
+
+</html>
